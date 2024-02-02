@@ -13,7 +13,7 @@ public class MainAppFrontScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainAppFrontScreen);
+        setContentView(R.layout.main_app_front_screen);
 
         String appName = getString(R.string.app_name);
         TextView appNameTextView = findViewById(R.id.app_name_textView);

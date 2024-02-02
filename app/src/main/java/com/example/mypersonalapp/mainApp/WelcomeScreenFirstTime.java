@@ -12,7 +12,7 @@ public class WelcomeScreenFirstTime extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcomeScreenFirstTime);
+        setContentView(R.layout.welcome_screen_first_time);
 
         // Find views in the layout
         Button one_time_button = findViewById(R.id.one_time_button);
