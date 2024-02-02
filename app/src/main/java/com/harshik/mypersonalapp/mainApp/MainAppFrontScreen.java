@@ -1,4 +1,4 @@
-package com.example.mypersonalapp.mainApp;
+package com.harshik.mypersonalapp.mainApp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mypersonalapp.R;
+import com.harshik.mypersonalapp.R;
 
 public class MainAppFrontScreen extends AppCompatActivity {
 

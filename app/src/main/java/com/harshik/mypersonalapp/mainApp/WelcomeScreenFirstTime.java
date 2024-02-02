@@ -1,11 +1,11 @@
-package com.example.mypersonalapp.mainApp;
+package com.harshik.mypersonalapp.mainApp;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mypersonalapp.R;
+import com.harshik.mypersonalapp.R;
 
 public class WelcomeScreenFirstTime extends AppCompatActivity {
 

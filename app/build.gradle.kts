@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mypersonalapp"
+    namespace = "com.harshik.mypersonalapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mypersonalapp"
+        applicationId = "com.harshik.mypersonalapp"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
