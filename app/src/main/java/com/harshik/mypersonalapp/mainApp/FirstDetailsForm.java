@@ -42,6 +42,7 @@ public class FirstDetailsForm extends AppCompatActivity {
     }
 
     private void saveDetails() {
+
         String name = name_editText.getText().toString().trim();
         String ageStr = age_editText.getText().toString().trim();
 
@@ -65,35 +66,20 @@ public class FirstDetailsForm extends AppCompatActivity {
             return;
         }
 
-        // Save details to the database (you need to implement your own database logic)
-        saveToDatabase(name, getSelectedGender(), age);
+        DatabaseHelperMainApp dbHelper = new DatabaseHelperMainApp(this);
+        Boolean output = dbHelper.insertUserDetails(name, getSelectedGender(), age);
+        if(output){
+            Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
+            //TODO MOVE TO APP DASHBOARD
+        }else {
+            Toast.makeText(this, "Failed. DETAILS", Toast.LENGTH_SHORT).show();
+            //TODO new logic
+        }
 
-        // Add your logic for what should happen after saving the details
-
-        Toast.makeText(this, "Details saved successfully.", Toast.LENGTH_SHORT).show();
     }
 
     private String getSelectedGender() {
         RadioButton selectedRadioButton = findViewById(gender_radioGroup.getCheckedRadioButtonId());
         return selectedRadioButton.getText().toString();
-    }
-
-    private void saveToDatabase(String name, String gender, int age) {
-        // Implement your database logic here (SQLite, Room, etc.)
-        // For simplicity, this example assumes you have a SQLite database helper class
-
-        // DatabaseHelper dbHelper = new DatabaseHelper(this);
-        // SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        // ContentValues values = new ContentValues();
-        // values.put("name", name);
-        // values.put("gender", gender);
-        // values.put("age", age);
-
-        // db.insert("user_details", null, values);
-
-        // Don't forget to close the database after use
-        // db.close();
-
     }
 }

@@ -31,7 +31,7 @@ public class WelcomeScreenFirstTime extends AppCompatActivity {
         one_time_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Add your logic for what should happen when the "Next" button is clicked
+                // TODO Add your logic for what should happen when the "Next" button is clicked
             }
         });
     }
