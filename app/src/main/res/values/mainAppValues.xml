@@ -2,4 +2,16 @@
     <string name="app_name">My Personal App</string>
     <string name="one_time_disc">Welcome to your Personal App where you can track all your daily things with full most PRIVACY</string>
     <string name="one_time_button">Let\'s Begin the Journey</string>
+    <string name="welcome">Welcome OnBoard to your Personal App</string>
+    <string name="details">Enter your basic details to know you more</string>
+    <string name="name">name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="gender">gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="others">others</string>
+    <string name="age">age</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="terms">By clicking on to the check box you are aggreeing to the TERMS and Conditions</string>
+    <string name="save">Save</string>
 </resources>
