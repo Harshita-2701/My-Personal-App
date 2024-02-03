@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import static com.harshik.mypersonalapp.contants.DbConstants.*;
+import static com.harshik.mypersonalapp.contants.MainAppConstants.*;
 
 import com.harshik.mypersonalapp.R;
 
@@ -27,15 +28,15 @@ public class MainAppFrontScreen extends AppCompatActivity {
                 Intent intent = new Intent(MainAppFrontScreen.this, WelcomeScreenFirstTime.class);
                 startActivity(intent);
                 finish(); // Finish the current activity to prevent going back
-            }, 5000);
-            // TODO rename the class
+            }, DELAY);
+            // Todo rename the class
         } else {
             new Handler().postDelayed(() -> {
                 // Start the second screen activity
                 Intent intent = new Intent(MainAppFrontScreen.this, WelcomeScreenFirstTime.class);
                 startActivity(intent);
                 finish(); // Finish the current activity to prevent going back
-            }, 5000);
+            }, DELAY);
         }
 
 

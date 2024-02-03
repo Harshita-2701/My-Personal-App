@@ -1,5 +1,6 @@
 package com.harshik.mypersonalapp.mainApp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +32,8 @@ public class WelcomeScreenFirstTime extends AppCompatActivity {
         one_time_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO Add your logic for what should happen when the "Next" button is clicked
+                Intent intent = new Intent(WelcomeScreenFirstTime.this, FirstDetailsForm.class);
+                startActivity(intent);
             }
         });
     }
