@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".mainApp.WelcomeScreenFirstTime"/>
         <activity android:name=".mainApp.FirstDetailsForm"/>
+        <activity android:name=".mainApp.AppDashboard"/>
+        <activity android:name=".mainApp.ProfileMainApp"/>
         
     </application>
 

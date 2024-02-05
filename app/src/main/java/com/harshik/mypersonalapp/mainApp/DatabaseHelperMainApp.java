@@ -9,6 +9,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import static com.harshik.mypersonalapp.contants.DbConstants.*;
 
+import java.util.Map;
+
 public class DatabaseHelperMainApp extends SQLiteOpenHelper {
 
     public DatabaseHelperMainApp(Context context) {
@@ -88,4 +90,38 @@ public class DatabaseHelperMainApp extends SQLiteOpenHelper {
         }
     }
 
+    public Map<String, String> getProfileDetails() {
+
+        Map<String, String> a = null;
+
+//        // Initialize SQLite database
+//        database = openOrCreateDatabase("YourDatabaseName", MODE_PRIVATE, null);
+//
+//        // Fetch user details from the database (assuming only one record)
+//        Cursor cursor = database.rawQuery("SELECT * FROM user WHERE id = 1", null);
+//
+//        if (cursor.moveToFirst()) {
+//            String name = cursor.getString(cursor.getColumnIndex("name"));
+//            String gender = cursor.getString(cursor.getColumnIndex("gender"));
+//            int age = cursor.getInt(cursor.getColumnIndex("age"));
+//
+//            // Display user details
+//            name_TextView.setText(name);
+//            gender_TextView.setText(gender);
+//            age_TextView.setText(String.valueOf(age));
+//
+//            // Dynamically set profile pic based on gender
+//            int drawableId = (gender.equalsIgnoreCase("male")) ? R.drawable.icon_male :
+//                    (gender.equalsIgnoreCase("female")) ? R.drawable.icon_female :
+//                            R.drawable.icon_other;
+//
+//            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), drawableId);
+//            profile_Pic_ImageView.setImageBitmap(bitmap);
+//            gender_Icon_ImageView.setImageBitmap(bitmap);
+//        }
+//
+//        cursor.close();
+        return a;
+
+    }
 }
